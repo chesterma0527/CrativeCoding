@@ -19,7 +19,7 @@ rect(0,300,800,600);
   vertex(630,100);
   vertex(800,0);
   endShape();
-//wall(left side)
+//wallShape(left side)
   fill(152,150,144);//wall color
   beginShape();
   vertex(0,0);
@@ -27,7 +27,7 @@ rect(0,300,800,600);
   vertex(170,450);
   vertex(0,570);
   endShape();
-//wall(right side)
+//wallShape(right side)
   beginShape();
   vertex(800,0);
   vertex(630,100);
@@ -112,19 +112,19 @@ rect(0,300,800,600);
   if(mouseX > 526 && mouseX < 550 && mouseY > 321 && mouseY < 340){
   println("9");
 }  
-//key
+//keyShape
   fill(255,210,46);//key color
   noStroke();
   ellipse(x,y,25,25);
   rect(x+5,y-5,60,10);
   rect(x+56,y,8,20);
   rect(x+38,y,8,20);
-//indicator lights
+//indicatorLightsShape
    fill(255,0,0);//red light color
    ellipse(350,150,10,10);//left indicator light
    ellipse(400,150,10,10);//middle indicator light
    ellipse(450,150,10,10);//right indicator light
-//red light turn green(key unlocks the lock)
+//red light turn green(when the key unlocks the lock)
   if (x > 312 && x < 330 && y >272 && y < 333){
    fill(0,255,0);
    ellipse(350,150,10,10); 
@@ -149,7 +149,6 @@ rect(0,300,800,600);
   void mouseClicked(){
   if(mouseX >350 && mouseX < 450 && mouseY > 250 && mouseY < 350 )
 {degree = degree + 0.27;
- // println(degree);
 }
   else {
     degree = 0;
