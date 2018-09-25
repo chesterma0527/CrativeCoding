@@ -12,7 +12,7 @@ void draw(){
 fill(88);//ground color
 rect(0,300,800,600);
 //seiling
-  fill(206,196,162);//seiling coloe
+  fill(206,196,162);//seiling color
   beginShape();
   vertex(0,0);
   vertex(170,100);
@@ -34,7 +34,7 @@ rect(0,300,800,600);
   vertex(460,400);
   vertex(800,550);
   endShape();
-//clues
+//clues and hints
   fill(0);
   text("-Try to turn all the red lights into green",140,30);//hint
   text("-please enter the passcode first and then turn the dial",140,53);//hint
